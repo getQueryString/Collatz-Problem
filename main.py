@@ -11,6 +11,8 @@ def collatz(n):
             n = n * 3 + 1
     if n == 1:
         return original_n, True
+    else:
+        return original_n, False
 
 
 if __name__ == '__main__':
