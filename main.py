@@ -9,7 +9,8 @@ def collatz(n):
             n //= 2
         else:
             n = n * 3 + 1
-    return original_n, True
+    if n == 1:
+        return original_n, True
 
 
 if __name__ == '__main__':
